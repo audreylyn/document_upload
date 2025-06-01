@@ -1,0 +1,214 @@
+/* Login & Register Pages Styling */
+body.auth-page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+}
+
+.auth-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.auth-image {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f8f0;
+    position: relative; 
+}
+
+.auth-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 139, 87, 0.3); 
+    z-index: 1; 
+}
+
+.auth-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative; 
+    z-index: 0; 
+}
+
+.auth-form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    background-color: white;
+}
+
+.auth-logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.auth-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #212529;
+}
+
+.auth-subtitle {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.nav-tabs {
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-tabs .nav-link {
+    color: #6c757d;
+    border: none;
+    padding: 10px 0;
+    margin-right: 40px;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+    color: #28a745;
+    background: none;
+    border-bottom: 2px solid #28a745;
+}
+
+.auth-form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #212529;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon .icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+
+.input-icon input {
+    padding-left: 40px;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+.form-check-input:checked {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.form-check-label {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.forgot-password {
+    text-align: right;
+    font-size: 14px;
+}
+
+.forgot-password a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+.btn-signin {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-signin:hover {
+    background-color: #218838;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.signup-link a {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.container-register {
+} 
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .auth-container {
+        flex-direction: column;
+    }
+    
+    .auth-image {
+        display: none;
+    }
+    
+    .auth-form-container {
+        width: 100%;
+        padding: 20px;
+    }
+}
