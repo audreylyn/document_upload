@@ -78,6 +78,10 @@ A web-based platform for academic institutions to manage, verify, and track appl
 
 ![Applicant Lists](screenshots/applicant_lists.png)
 
+### Document View
+
+![View](screenshots/view.png)
+
 ### Approved Document View
 
 ![Approved](screenshots/approved.png)
@@ -102,7 +106,7 @@ It uses open-source libraries in compliance with their respective licenses.
 ## 👤 Author
 
 **Audreylyn Moraña**  
-Front End Lead  
+Front End Lead (Front End only; backend not developed by me)  
 Email: [audreylynmorana1504@gmail.com](mailto:audreylynmorana1504@gmail.com)
 
 ---
